@@ -2,8 +2,75 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height: 70vh;
 }
+
+
+
 
 button {
     margin:5px;
+    width:5em;
+}
+
+#buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score {
+    font-weight: 600;
+    height:15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes enhanceScore {from {font-size:3.5em;} to {font-size:4em}}
+
+.enhanceScore {
+    animation: enhanceScore 0.25s ease-in-out 0s;
+}
+
+.normScore {
+    font-size:3.5em;
+}
+
+
+#roll {
+    font-size:2.5em;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:15vh;
+}
+
+.paraRoll {
+    width:21vw;
+    display:flex;
+    justify-content: center;
+}
+
+#vs {
+    width:min-content;
+    margin:10px;
+}
+
+.wonRoll {
+    color:green;
+    font-weight:700;
+}
+
+.lostRoll {
+    color:red;
+    font-weight: 600;
+}
+
+.draw {
+    color:rgb(196, 196, 30);
+    font-weight: 600;
 }
